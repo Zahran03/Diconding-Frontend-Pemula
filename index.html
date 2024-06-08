@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookShelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>BookShelf Apps</h1>
+    </nav>
+
+    <section class="input_search">
+      <div class="input_field">
+        <h3 class="input_title">Masukan buku baru</h3>
+        <form action="" id="form">
+          <div class="input_group">
+            <label for="judul">Judul</label>
+            <input type="text" id="judul" name="judul" />
+          </div>
+          <div class="input_group">
+            <label for="penulis">Penulis</label>
+            <input type="text" id="penulis" name="judul" />
+          </div>
+          <div class="input_group">
+            <label for="tahun">Tahun</label>
+            <input type="number" id="tahun" name="tahun" />
+          </div>
+          <label for="isComplete">Selesai dibaca</label>
+          <input type="checkbox" id="isComplete" name="isComplete" />
+          <input
+            type="submit"
+            value="Submit"
+            name="submit"
+            class="btn-submit"
+          />
+        </form>
+      </div>
+
+      <div class="search_field">
+        <h3 class="search_title">Cari Buku</h3>
+        <form action="" id="search_input">
+          <div class="input_group">
+            <label for="searchBooks">Judul</label>
+            <input type="text" id="searchBooks" name="cariBuku" />
+          </div>
+          <input type="submit" value="Cari" name="submit" class="btn-submit" />
+        </form>
+      </div>
+    </section>
+
+    <section class="rak_belum_dibaca">
+      <h3 class="rak_header">Rak Belum selesai dibaca</h3>
+      <div class="row" id="belum_dibaca">
+        <div class="book">
+          <h4 class="titleBook">Laskar Pelangi</h4>
+          <p>Penulis : Andrea Hirata</p>
+          <p>Tahun terbit : 2009</p>
+          <div class="book_action">
+            <button class="sudah_dibaca">Sudah dibaca</button>
+            <button class="delete_book">Hapus Buku</button>
+          </div>
+        </div>
+        <div class="book">
+          <div class="textContainer">
+            <h4 class="titleBook">Laskar Pelangi</h4>
+            <p>Penulis : Andrea Hirata</p>
+            <p>Tahun terbit : 2009</p>
+          </div>
+          <div class="book_action">
+            <button class="sudah_dibaca">Sudah dibaca</button>
+            <button class="delete_book">Hapus Buku</button>
+          </div>
+        </div>
+        <div class="book">
+          <h4 class="titleBook">Laskar Pelangi</h4>
+          <p>Penulis : Andrea Hirata</p>
+          <p>Tahun terbit : 2009</p>
+          <div class="book_action">
+            <button class="sudah_dibaca">Sudah dibaca</button>
+            <button class="delete_book">Hapus Buku</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rak_sudah_dibaca">
+      <h3>Rak Sudah dibaca</h3>
+      <div class="row" id="sudah_dibaca"></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

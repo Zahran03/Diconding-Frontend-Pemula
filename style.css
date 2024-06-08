@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+
+:root {
+  --primary: cornflowerblue;
+  --bg: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.input_search {
+  /* margin: 4rem 3%; */
+  margin-top: 5.5rem;
+  display: flex;
+}
+
+.input_field,
+.search_field {
+  flex: 1 1 45rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3%;
+  border: solid black 2px;
+  border-radius: 0.3rem;
+  margin: 0 1rem 0 1rem;
+}
+
+.input_search .input_field form .input_group label,
+.input_search .search_field form .input_group label {
+  display: block;
+}
+
+.input_search .input_field form .input_group input,
+.input_search .search_field form .input_group input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  border: solid black 2px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  border: 2px solid black;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.rak_belum_dibaca,
+.rak_sudah_dibaca {
+  margin: 2rem 1.3%;
+  border: 2px solid black;
+  border-radius: 0.3rem;
+  padding: 1.8rem 1.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.book {
+  width: 20%;
+  border: 2px solid black;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.sudah_dibaca,
+.belum_dibaca {
+  padding: 0.5rem 0.2rem;
+  background-color: forestgreen;
+  border: 2px solid black;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-right: 0.3rem;
+}
+
+.delete_book {
+  padding: 0.5rem 0.2rem;
+  background-color: rgb(201, 19, 19);
+  border: 2px solid black;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
